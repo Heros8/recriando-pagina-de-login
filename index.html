@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,10 +27,10 @@
         #caixa2{
             background-color: black;
         }
-        h1, h2, h4, label, p{
+        h1, h2, h3, label, p{
             color: white
         }
-        h1, h2, h4, input, label{
+        h1, h2, h3, input, label{
             text-align: center;
         }
         input{
@@ -56,14 +56,31 @@
             padding: 0;
         }
         .acoes{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
-        h1, h2, h4, h6, p, ul {
-    margin: 0;
-    padding: 0;
+        h1, h2, h3, h4, p, ul {
+            margin: 0;
+            padding: 0;
         }
+        label{
+            width: 100px;
+            text-align: right;
+        }
+       .radio {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 5px;
+}
+
+       .radio label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-align: left;
+}
+
     </style>
 </head>
 <body>
@@ -79,54 +96,71 @@
 </div>
     <main>
         <div id="caixa">
-            <form action="">
+            <form action="#">
                 <h1>Informe seus dados para entrar</h1>
 
                 <h2>Ou crie uma conta</h2>
-                <h4>Nome</h4>
+
+                <h3>Nome</h3>
                 <input type="text">
                 
-                <h4>Sobrenome</h4>
+                <h3>Sobrenome</h3>
                 <input type="text">
 
-                <h4>E-mail</h4>
+                <h3>E-mail</h3>
                 <input type="email">
 
-                <h4>Senha</h4>
+                <h3>Senha</h3>
                 <input type="password">
 
-                <h4>Telefone</h4>
+                <h3>Telefone</h3>
                 <input type="tel">
 
-                <h4>idade</h4>
+                <h3>idade</h3>
                 <input type="number">
                 
-                <h4>Gênero</h4>
-                <label class="label" for="masculino">Masculino</label>
-                <input type="radio" id="masculino" name="genero" value="masculino"> <br>
-                <label class="label" for="feminino">Feminino</label>
-                <input type="radio" id="feminino" name="genero" value="feminino"> <br>
-                <label class="label" for="outro-outra">Outro ou outra</label>
-                <input type="radio" id="outro-outra" name="genero" value="outro-outra">
+                <h3>Gênero</h3>
+
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="genero" value="masculino">
+                        Masculino
+                        </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="genero" value="feminino">
+                        Feminino
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="genero" value="outro">
+                        Outro ou outra
+                     </label>
+                </div>
                 <input type="submit">
                 <input type="reset">
             </form>
         </div>
     </main>
+
     <div id="caixa2">
-        <h6>Dúvidas? Ligue para 0000 000 0000</h6>
+        <h4>Dúvidas? Ligue para 0000 000 0000</h4>
         <nav>
             <ul>
-                <div><li><a href="">Perguntas frequentes</a></li>
+                <li><a href="">Perguntas frequentes</a></li>
                 <li><a href="">Relações com investidores</a></li>
                 <li><a href="">Formas de assistir</a></li>
                 <li><a href="">Informações corporativas</a></li>
                 <li><a href="">Só na Netflix</a></li>
+
                 <li><a href="">Central de Ajuda</a></li>
                 <li><a href="">Carreiras</a></li>
                 <li><a href="">Termos de Uso</a></li>
                 <li><a href="">Entre em contato</a></li>
                 <li><a href="">Conta</a></li>
+                
                 <li><a href="">Resgatar cartão pré-pago</a></li>
                 <li><a href="">Privacidade</a></li>
                 <li><a href="">Teste de velocidade</a></li>
