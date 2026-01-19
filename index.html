@@ -4,18 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            width: 250px;
+            cursor: pointer;
+        }
+        #botao{
+            background-color: red;
+            border: none;
+            cursor: pointer;
+            
+        }
+        body{
+            background-image: url(https://telaviva.com.br/wp-content/uploads/2021/08/netflix-.jpg);
+            background-size: cover;
+            background-size: 1400px;
+        }
+        #caixa2{
+            background-color: black;
+        }
+        h1, h2, h4, label, p{
+            color: white
+        }
+        h1, h2, h4, input, label{
+            text-align: center;
+        }
+        input{
+            display: block;
+            margin: 0 auto;
+        }
+        #cabecalho{
+            background-color: rgba(0, 0, 0, 0.400);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+        li, a{
+            color: gray;
+        }
+        #caixa{
+            background-color: rgba(0, 0, 0, 0.750);
+        }
+        div{
+            margin: 0;
+            display: block;
+            padding: 0;
+        }
+        .acoes{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+        }
+        h1, h2, h4, h6, p, ul {
+    margin: 0;
+    padding: 0;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <img src="" alt="Logo da Netflix">
-        <label for="Idioma">Selecione um Idioma</label>
+    <div id="cabecalho">
+    <img src="imagens/image-removebg-preview.png" alt="Logo da Netflix">
+    <div class="acoes">
+        <label for="Idioma">Idioma</label>
         <select name="Idioma" id="Idioma">
-            <option value="português">português</option>
+            <option value="português">Português</option>
         </select>
-        <button>Entrar</button>
+        <button id="botao">Entrar</button>
     </div>
+</div>
     <main>
-        <div>
+        <div id="caixa">
             <form action="">
                 <h1>Informe seus dados para entrar</h1>
 
@@ -39,21 +102,22 @@
                 <input type="number">
                 
                 <h4>Gênero</h4>
-                <label for="masculino">Masculino</label>
+                <label class="label" for="masculino">Masculino</label>
                 <input type="radio" id="masculino" name="genero" value="masculino"> <br>
-                <label for="feminino">Feminino</label>
+                <label class="label" for="feminino">Feminino</label>
                 <input type="radio" id="feminino" name="genero" value="feminino"> <br>
-                <label for="outro-outra">Outro ou outra</label>
+                <label class="label" for="outro-outra">Outro ou outra</label>
                 <input type="radio" id="outro-outra" name="genero" value="outro-outra">
-
+                <input type="submit">
+                <input type="reset">
             </form>
         </div>
     </main>
-    <div>
+    <div id="caixa2">
         <h6>Dúvidas? Ligue para 0000 000 0000</h6>
         <nav>
             <ul>
-                <li><a href="">Perguntas frequentes</a></li>
+                <div><li><a href="">Perguntas frequentes</a></li>
                 <li><a href="">Relações com investidores</a></li>
                 <li><a href="">Formas de assistir</a></li>
                 <li><a href="">Informações corporativas</a></li>
@@ -72,6 +136,9 @@
                 <li><a href="">Avisos Legais</a></li>
             </ul>
         </nav>
+        <footer>
+        <p>Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. Saiba mais</p>
+    </footer>
     </div>
 </body>
 </html>
